@@ -3,7 +3,7 @@
   <!-- Brand Logo -->
   <a href="<?= base_url('admin'); ?>" class="brand-link">
     <img src="<?= base_url('assets/img/img_properties/favicon.png'); ?>" alt="AdminLTE Logo" class="img-w-50">
-    <span class="brand-text">Zona Lapor</span>
+    <span class="brand-text">Hazard Report</span>
   </a>
 
   <!-- Sidebar -->
@@ -53,7 +53,7 @@
           <?php endif ?>
         </li>
        
-        <?php if ($dataUser['jabatan'] == 'administrator'): ?>
+        <?php if ($dataUser['posisi'] == 'administrator'): ?>
           <?php if (
             $_SERVER['REQUEST_URI'] == '/app/user' || 
             $_SERVER['REQUEST_URI'] == '/app/user/'||

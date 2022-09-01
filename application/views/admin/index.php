@@ -1,10 +1,10 @@
 <?php 
-	$proses = $this->db->get_where('pengaduan', ['status_pengaduan' => 'proses'])->num_rows();
-	$valid = $this->db->get_where('pengaduan', ['status_pengaduan' => 'valid'])->num_rows();
-	$pengerjaan = $this->db->get_where('pengaduan', ['status_pengaduan' => 'pengerjaan'])->num_rows();
-	$selesai = $this->db->get_where('pengaduan', ['status_pengaduan' => 'selesai'])->num_rows();
-	$tidak_valid = $this->db->get_where('pengaduan', ['status_pengaduan' => 'tidak_valid'])->num_rows();
-	$belum_ditanggapi = $this->db->get_where('pengaduan', ['status_pengaduan' => 'belum_ditanggapi'])->num_rows();
+	$proses = $this->db->get_where('hazard_pengaduan', ['status_pengaduan' => 'proses'])->num_rows();
+	$valid = $this->db->get_where('hazard_pengaduan', ['status_pengaduan' => 'valid'])->num_rows();
+	$pengerjaan = $this->db->get_where('hazard_pengaduan', ['status_pengaduan' => 'pengerjaan'])->num_rows();
+	$selesai = $this->db->get_where('hazard_pengaduan', ['status_pengaduan' => 'selesai'])->num_rows();
+	$tidak_valid = $this->db->get_where('hazard_pengaduan', ['status_pengaduan' => 'tidak_valid'])->num_rows();
+	$belum_ditanggapi = $this->db->get_where('hazard_pengaduan', ['status_pengaduan' => 'belum_ditanggapi'])->num_rows();
 ?>
 
 
@@ -87,9 +87,9 @@
 						<?php foreach ($pengaduan_belum_ditanggapi as $dp): ?>
 							<tr>
 								<td class="align-middle"><?= $i++; ?></td>
-								<td class="align-middle"><?= $dp['tgl_pengaduan']; ?></td>
-								<td class="align-middle"><?= $dp['isi_laporan']; ?></td>
-								<td class="align-middle"><?= $dp['kelurahan']; ?></td>
+								<td class="align-middle"><?= $dp['tgl']; ?></td>
+								<td class="align-middle"><?= $dp['isi']; ?></td>
+								<td class="align-middle"><?= $dp['ket']; ?></td>
 								<td class="align-middle text-center">
 									<a href="<?= base_url('assets/img/img_pengaduan/') . $dp['foto']; ?>" class="enlarge">
 										<img src="<?= base_url('assets/img/img_pengaduan/') . $dp['foto']; ?>" class="img-fluid img-w-75-hm-100" alt="<?= $dp['foto']; ?>">

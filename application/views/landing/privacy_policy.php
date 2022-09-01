@@ -27,7 +27,7 @@
     <div class="row justify-content-center py-3">
       <div class="col-lg">
         <h3>Privacy Policy</h3> 
-        
+<!--         
         <p>Zona Lapor membuat aplikasi Zona Lapor sebagai aplikasi Gratis. LAYANAN ini disediakan oleh Zona Lapor tanpa biaya dan dimaksudkan untuk digunakan apa adanya.</p> 
 
         <p>Halaman ini digunakan untuk memberi tahu pengunjung mengenai kebijakan kami dengan pengumpulan, penggunaan, dan pengungkapan Informasi Pribadi jika ada yang memutuskan untuk menggunakan Layanan kami.
@@ -39,7 +39,7 @@
 
         <h4>Pengumpulan dan Penggunaan Informasi</h4>
 
-        <p>Untuk pengalaman yang lebih baik, saat menggunakan Layanan kami, kami mungkin meminta Anda untuk memberikan kami informasi pengenal pribadi tertentu termasuk, namun tidak terbatas pada zonalapor@gmail.com. Informasi yang kami minta akan disimpan oleh kami dan digunakan seperti yang dijelaskan dalam kebijakan privasi ini.</p>
+        <p>Untuk pengalaman yang lebih baik, saat menggunakan Layanan kami, kami mungkin meminta Anda untuk memberikan kami informasi pengenal pribadi tertentu termasuk, namun tidak terbatas pada zonalapor@gmail.com. Informasi yang kami minta akan disimpan oleh kami dan digunakan seperti yang dijelaskan dalam kebijakan privasi ini.</p> -->
 
         <!-- <h4>Data Log</h4>
         

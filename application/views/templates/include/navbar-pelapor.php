@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+<!-- <nav class="main-header navbar navbar-expand navbar-white navbar-light"> -->
   <!-- Left navbar links -->
   <!-- <ul class="navbar-nav">
     <li class="nav-item">
@@ -20,13 +20,13 @@
   </form> -->
 
   <!-- Right navbar links -->
-  <ul class="navbar-nav ml-auto">
+  <!-- <ul class="navbar-nav ml-auto"> -->
     <!-- Messages Dropdown Menu -->
-    <li class="nav-item ">
+    <!-- <li class="nav-item ">
       <a class="nav-link"  href="http://ptrci.co.id/app/">
         <i class="fas fa-home"></i>
       </a>
     </li>
   </ul>
-</nav>
+</nav> -->
 <!-- /.navbar -->

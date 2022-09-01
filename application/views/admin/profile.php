@@ -27,7 +27,7 @@
 				<tr>
 					<th>Jabatan</th>
 					<td style="width: 2rem; text-align: center;"> : </td>
-					<td style="min-width: 15rem !important"><?= ucwords($dataUser['jabatan']); ?></td>
+					<td style="min-width: 15rem !important"><?= ucwords($dataUser['posisi']); ?></td>
 				</tr>
 				<tr>
 					<td colspan="3">
@@ -37,6 +37,9 @@
 							</div>
 							<div class="col">
 								<a href="<?= base_url('admin/editProfile'); ?>" class="btn btn-success"><i class="fas fa-fw fa-user-edit"></i> Ubah Profil</a>
+							</div>
+							<div class="col">
+								<a href="<?= base_url('landing/logout'); ?>" class="btn btn-warning"><i class="fas fa-fw fa-user-logout"></i> Logout</a>
 							</div>
 						</div>
 					</td>

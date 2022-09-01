@@ -14,27 +14,18 @@ class Auth_model extends CI_Model
 		$username = $this->input->post('username', true);
 		$password = $this->input->post('password', true);
 
-		$dataUser = $this->admo->getDataUserAdminByUsername($username);
 		// check username
-		if ($dataUser) 
+		if ($dataUser = $this->admo->getDataUserAdminByUsername($username)) 
 		{
 			// check password
 			if (md5($password) === $dataUser['password']) 
 			{
-				if($dataUser['role_id'] == 1 || $dataUser['role_id'] == 2 ){
-					$dataSession = [
-						'id_user' => $dataUser['id_user']
-					];
-					
-					var_dump('MASUK');
-
-					$this->session->set_userdata($dataSession);
-					redirect('admin');
-				} else {
-					$this->session->set_flashdata('message-failed', 'Gagal masuk, anda bukan admin');
-					redirect('landing/masuk');
-				}
-		
+				$dataSession = [
+					'id_user' => $dataUser['id']
+				];
+				
+				$this->session->set_userdata($dataSession);
+				redirect('admin');
 			}
 			else
 			{

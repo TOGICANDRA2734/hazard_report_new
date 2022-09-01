@@ -74,8 +74,8 @@
 								<td class="align-middle"><?= $dp['isi']; ?></td>
 								<td class="align-middle"><?= $dp['ket']; ?></td>
 								<td class="align-middle text-center">
-									<a href="<?= base_url('assets/img/img_pengaduan/') . $dp['foto']; ?>" class="enlarge">
-										<img src="<?= base_url('assets/img/img_pengaduan/') . $dp['foto']; ?>" class="img-fluid img-w-75-hm-100" alt="<?= $dp['foto']; ?>">
+									<a href="<?= base_url('assets/img/img_pengaduan/') . $dp['foto_pengaduan']; ?>" class="enlarge">
+										<img src="<?= base_url('assets/img/img_pengaduan/') . $dp['foto_pengaduan']; ?>" class="img-fluid img-w-75-hm-100" alt="<?= $dp['foto_pengaduan']; ?>">
 									</a>
 								</td>
 								<td class="align-middle">

@@ -6,6 +6,6 @@ class Saran_model extends CI_Model
 	public function getSaran()
 	{
 		$this->db->order_by('tgl_saran', 'desc');
-		return $this->db->get('saran')->result_array();
+		return $this->db->get('hazard_saran')->result_array();
 	}
 }

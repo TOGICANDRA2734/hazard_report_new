@@ -31,8 +31,8 @@
 
 		<div class="row text-center py-3">
 			<div class="col-lg">
-				<a href="<?= base_url('assets/img/img_pengaduan/') . $pengaduan['foto']; ?>" class="enlarge">
-					<img src="<?= base_url('assets/img/img_pengaduan/') . $pengaduan['foto']; ?>" class="img-fluid img-hm-200" alt="<?= $pengaduan['foto']; ?>">
+				<a href="<?= base_url('assets/img/img_pengaduan/') . $pengaduan['foto_pengaduan']; ?>" class="enlarge">
+					<img src="<?= base_url('assets/img/img_pengaduan/') . $pengaduan['foto_pengaduan']; ?>" class="img-fluid img-hm-200" alt="<?= $pengaduan['foto_pengaduan']; ?>">
 				</a><br>
 				<small>Klik gambar untuk perbesar</small>
 			</div>

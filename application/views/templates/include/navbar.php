@@ -1,14 +1,14 @@
-<!-- Navbar -->
-<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+<!-- Navbar --> 
+<!-- <nav class="main-header navbar navbar-expand navbar-white navbar-light"> -->
   <!-- Left navbar links -->
-  <ul class="navbar-nav">
+  <!-- <ul class="navbar-nav">
     <li class="nav-item">
       <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
     </li>
-    <!-- <li class="nav-item d-none d-sm-inline-block">
+    <li class="nav-item d-none d-sm-inline-block">
       <a href="<?= base_url('admin'); ?>" class="nav-link">Dasbor</a>
-    </li> -->
-  </ul>
+    </li>
+  </ul> -->
 
   <!-- SEARCH FORM -->
  <!--  <form class="form-inline ml-3">
@@ -23,9 +23,9 @@
   </form> -->
 
   <!-- Right navbar links -->
-  <ul class="navbar-nav ml-auto">
+  <!-- <ul class="navbar-nav ml-auto"> -->
     <!-- Messages Dropdown Menu -->
-    <li class="nav-item dropdown">
+    <!-- <li class="nav-item dropdown">
       <a class="nav-link" data-toggle="dropdown" href="#">
         <i class="far fa-user"></i>
       </a>
@@ -39,5 +39,5 @@
       </div>
     </li>
   </ul>
-</nav>
-<!-- /.navbar -->
+</nav> -->
+<!--/.navbar -->

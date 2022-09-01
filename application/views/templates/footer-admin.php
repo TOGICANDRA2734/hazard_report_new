@@ -5,12 +5,6 @@
 		<!-- ./Sweet Alert 2 -->
 
 		<!-- /.content-wrapper -->
-		<footer class="main-footer">
-			<strong>Hak Cipta &copy; 2021 Oleh Andri Firman Saputra.</strong>
-			<div class="float-right d-none d-sm-inline-block">
-				<b>Versi</b> 1.0.0
-			</div>
-		</footer>
 	</div>
 </body>
 </html>

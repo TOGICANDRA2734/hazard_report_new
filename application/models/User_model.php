@@ -12,7 +12,7 @@ class User_model extends CI_Model
 
 	public function getUser()
 	{
-		$this->db->order_by('jabatan', 'asc');
+		$this->db->order_by('posisi', 'asc');
 		return $this->db->get('user')->result_array();	
 	}
 
@@ -32,7 +32,7 @@ class User_model extends CI_Model
 			'username' 		=> $this->input->post('username', true),
 			'password'		=> password_hash($this->input->post('password', true), PASSWORD_DEFAULT),
 			'no_telepon'	=> $this->input->post('no_telepon', true),
-			'jabatan'		=> strtolower($this->input->post('jabatan', true))
+			'posisi'		=> strtolower($this->input->post('jabatan', true))
 		];
 
 		$this->db->insert('user', $data);

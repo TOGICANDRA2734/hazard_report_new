@@ -14,7 +14,7 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-lg-6 p-3">
+		<div class="col-lg-12 p-3">
 			<div class="card">
 				<div class="card-header">
 					<h3 class="my-auto"><i class="fas fa-fw fa-plus"></i> Tambah Pengaduan</h3>

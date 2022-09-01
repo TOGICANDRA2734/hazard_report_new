@@ -88,7 +88,7 @@
 						<?php $i = 1; ?>
 						<?php foreach ($pengaduan as $dp): ?>
 							<?php 
-								$getTanggapan = $this->db->order_by('tanggapan.id_tanggapan', 'desc')->get_where('tanggapan', ['id_pengaduan' => $dp['id_pengaduan']])->row_array();
+								$getTanggapan = $this->db->order_by('hazard_tanggapan.id', 'desc')->get_where('hazard_tanggapan', ['id_pengaduan' => $dp['id_pengaduan']])->row_array();
 								$status = explode('_', $dp['status_pengaduan']);
 								$status = implode(' ', $status);
 								$status = ucwords($status);
@@ -96,9 +96,9 @@
 							<tr>
 								<td class="align-middle"><?= $i++; ?></td>
 								<td class="align-middle"><?= $dp['username']; ?></td>
-								<td class="align-middle"><?= $dp['tgl_pengaduan']; ?></td>
-								<td class="align-middle"><?= $dp['isi_laporan']; ?></td>
-								<td class="align-middle"><?= $dp['kelurahan']; ?></td>
+								<td class="align-middle"><?= $dp['tgl']; ?></td>
+								<td class="align-middle"><?= $dp['isi']; ?></td>
+								<td class="align-middle"><?= $dp['ket']; ?></td>
 								<td class="align-middle text-center">
 									<a href="<?= base_url('assets/img/img_pengaduan/') . $dp['foto']; ?>" class="enlarge">
 										<img src="<?= base_url('assets/img/img_pengaduan/') . $dp['foto']; ?>" class="img-fluid img-w-75-hm-100" alt="<?= $dp['foto']; ?>">
@@ -121,16 +121,16 @@
 								</td>
 								<td class="align-middle">
 									<?php if ($getTanggapan): ?>
-										<?php if ($getTanggapan['status_tanggapan'] == 'proses'): ?>
-											<p><?= $getTanggapan['isi_tanggapan']; ?></p>
-										<?php elseif ($getTanggapan['status_tanggapan'] == 'valid'): ?>
-											<p><?= $getTanggapan['isi_tanggapan']; ?></p>
-										<?php elseif ($getTanggapan['status_tanggapan'] == 'pengerjaan'): ?>
-											<p><?= $getTanggapan['isi_tanggapan']; ?></p>
-										<?php elseif ($getTanggapan['status_tanggapan'] == 'selesai'): ?>
-											<p><?= $getTanggapan['isi_tanggapan']; ?></p>
-										<?php elseif ($getTanggapan['status_tanggapan'] == 'tidak_valid'): ?>
-											<p><?= $getTanggapan['isi_tanggapan']; ?></p>
+										<?php if ($getTanggapan['status'] == 'proses'): ?>
+											<p><?= $getTanggapan['isi']; ?></p>
+										<?php elseif ($getTanggapan['status'] == 'valid'): ?>
+											<p><?= $getTanggapan['isi']; ?></p>
+										<?php elseif ($getTanggapan['status'] == 'pengerjaan'): ?>
+											<p><?= $getTanggapan['isi']; ?></p>
+										<?php elseif ($getTanggapan['status'] == 'selesai'): ?>
+											<p><?= $getTanggapan['isi']; ?></p>
+										<?php elseif ($getTanggapan['status'] == 'tidak_valid'): ?>
+											<p><?= $getTanggapan['isi']; ?></p>
 										<?php endif ?>
 									<?php else: ?>
 										<p>-</p>
@@ -138,7 +138,7 @@
 								</td>
 								<td class="align-middle text-center">
 									<a href="<?= base_url('tanggapan/index/' . $dp['id_pengaduan']); ?>" class="btn btn-sm btn-info m-1"><i class="fas fa-fw fa-reply"></i></a>
-									<?php if ($dataUser['jabatan'] == 'administrator'): ?>
+									<?php if ($dataUser['posisi'] == 'administrator'): ?>
 										<a href="<?= base_url('pengaduan/removePengaduan/' . $dp['id_pengaduan']); ?>" class="btn btn-sm btn-danger m-1 btn-delete" data-nama="<?= $dp['isi_laporan']; ?>"><i class="fas fa-fw fa-fw fa-trash"></i></a>
 									<?php endif ?>
 								</td>

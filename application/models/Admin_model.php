@@ -20,12 +20,12 @@ class Admin_model extends CI_Model
 	public function getDataUserAdmin()
 	{
 		$id_user = $this->session->userdata('id_user');
-		return $this->db->get_where('user', ['id_user' => $id_user])->row_array();
+		return $this->db->get_where('user', ['id' => $id_user])->row_array();
 	}
 
 	public function getDataUserAdminByUsername($username)
 	{
-		return $this->db->join('model_has_roles', 'model_has_roles.model_id=user.id')->get_where('user', ['username' => $username])->row_array();
+		return $this->db->get_where('user', ['username' => $username])->row_array();
 	}
 
 	public function userPrivilege($redirect = 'admin', $isi2 = '')
@@ -37,7 +37,7 @@ class Admin_model extends CI_Model
 
 			$this->session->set_flashdata('message-failed', $isi);
 			
-			$id_user = $dataUser['id_user'];
+			$id_user = $dataUser['id'];
 			$this->lomo->addLog($isi, $id_user);
 			redirect($redirect);
 			exit();
@@ -47,7 +47,7 @@ class Admin_model extends CI_Model
 	public function changePassword()
 	{
 		$dataUser 	= $this->getDataUserAdmin();
-		$id_user 	= $dataUser['id_user'];
+		$id_user 	= $dataUser['id'];
 
 		// check old password
 		$old_password = $this->input->post('old_password', true);

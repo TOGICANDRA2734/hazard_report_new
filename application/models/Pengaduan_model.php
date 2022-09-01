@@ -44,7 +44,7 @@ class Pengaduan_model extends CI_Model
 		$this->db->order_by('id_pengaduan', 'desc');
 		if ($status_pengaduan) 
 		{
-			return $this->db->get_where('pengaduan', ['hazard_pengaduan.status_pengaduan' => $status_pengaduan])->result_array();
+			return $this->db->get_where('hazard_pengaduan', ['hazard_pengaduan.status_pengaduan' => $status_pengaduan])->result_array();
 		} 
 		else 
 		{
